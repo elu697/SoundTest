@@ -54,7 +54,7 @@ class ViewController: UIViewController {
                     DispatchQueue.main.async {
                         soundId = UInt32(self.idLabel.text ?? "") ?? 1000
                         try? AudioServicesPlaySystemSound(SystemSoundID(soundId))
-                        self.idLabel.text = String((UInt32(self.idLabel.text ?? "") ?? 0) + 1)
+//                        self.idLabel.text = String((UInt32(self.idLabel.text ?? "") ?? 0) + 1)
                     }
                     usleep(1 * 100000)//0.1s
                 }
